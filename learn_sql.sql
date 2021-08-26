@@ -1,11 +1,19 @@
 -- Database is a collection of data stored in a format that can easily be accessed.
 
--- get help before connecting.
-`psql --help`
-
--- connecting to a database, If you dont input the 'DBnameToConnectTo', it defaults to postgres database.
+-- *in windows connecting to a database, If you dont input the 'DBnameToConnectTo', it defaults to postgres database.
 `psql -h <hostname|localhost> -p <port|5432> -U <username|postgres> <DBnameToConnectTo>` 
 
+-- Switch over to the postgres account on your server
+`sudo -i -u postgres`
+
+-- Accessing a Postgres Prompt Without Switching To the Postgres User
+`sudo -u postgres psql`
+
+-- You can now access the PostgreSQL prompt immediately by typing:
+`psql`
+
+-- Exit out of the PostgreSQL prompt by typing
+`\q`
 
 -- postgres commands.
 \?  --> help with psql commands.
