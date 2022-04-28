@@ -95,8 +95,15 @@ SELECT * FROM <table_name> WHERE <column_name> = '<some_value>' AND <column_name
 -- using OR. with 3 columns.
 SELECT * FROM <table_name> WHERE <column_name> = '<some_value>' AND (<column_name> = '<some_value>' OR <column_name> = '<some_value>');
 
-
-
 -- limit
 SELECT * FROM <table_name> LIMIT <no_of_records>
+
+-- functions
+
+select COUNT(<column>) from <table> 
+select AVG(<column>) from <table> 
+select SUM(<column>) from <table> 
+
+
+
 
